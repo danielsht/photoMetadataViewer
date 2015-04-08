@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+#include "printMetaData.h"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    if(argc != 2)
+        cout<<"Usage: "<< argv[0]<<" file\n";
+    else
+    {
+        printMetaData picture;
+        
+    }
     return 0;
 }
